@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8: Responsive Web Design</title>
+    <!-- created By Ella Li on Nov 17, 2024 -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Pacifico", cursive;
+            font-size: 30px;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+        }
+
+        p, img {
+            margin-left: 0;
+        }
+
+        img {
+            margin-top: 20px;
+            display: block;
+            max-width: 100%; 
+            height: auto;
+        }
+
+        p, #subhead {
+            background-color: #eee;
+            opacity: 0.9;
+            font-weight: lighter;
+        }
+
+        p {
+            padding: 1em 20px;
+        }
+
+        h1, h2 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            background-color: black;
+            color: white;
+            padding: 0.375em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            background-color: black;
+            color: white;
+            padding: 0.375em;
+            margin: 0;
+        }
+
+        ul a {
+            color: magenta;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: yellow;
+                font-size: 0.75em; 
+            }
+
+            p, img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 600px) {
+            p {
+                width: 600px;
+                margin: 10px auto;
+            }
+
+            img {
+                width: 800px;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="headline">
+        <h1>This is a One Page Website...</h1>
+    </div>
+    <p>...and we're going to design a desktop and a mobile view for it!</p>
+    <h2>Table of Contents:</h2>
+    <ul>
+        <li><a href="#One">One</a></li>
+        <li><a href="#Two">Two</a></li>
+        <li><a href="#Three">Three</a></li>
+        <li><a href="#Four">Four</a></li>
+    </ul>
+    <h2><a name="One">One</a></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor nulla, efficitur a faucibus ac, vehicula vel nunc. Phasellus urna nisi, scelerisque sed eros ut, pellentesque ornare nisi. Nulla fermentum risus eu elementum imperdiet.</p>
+    <h2><a name="Two">Two</a></h2>
+    <p>Integer in elit ut odio vestibulum sagittis a quis elit. Nam eget imperdiet dui. Cras consectetur nisi non ex laoreet consectetur sed a arcu. Integer non venenatis eros.</p>
+    <h2><a name="Three">Three</a></h2>
+    <img src="https://i.imgur.com/hvm8Jc1.jpg" alt="deck cat">
+    <p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa. Fusce faucibus, dolor auctor lacinia iaculis, lorem mi consequat enim, nec dignissim tortor lorem at nisi.</p>
+    <h2><a name="Four">Four</a></h2>
+    <p>Morbi vestibulum massa vitae tortor vehicula rhoncus. Duis ac orci rhoncus, consectetur justo at, faucibus lacus. Nunc sit amet dolor sed neque scelerisque congue vel at nisi.</p>
+</body>
+</html>
